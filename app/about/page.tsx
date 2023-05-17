@@ -1,6 +1,8 @@
 "use client";
+// import Button from "@/components/Button";
 import SparkGenerator from "@/components/SparkGenerator";
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 function About() {
@@ -20,7 +22,7 @@ function About() {
           </div>
           <div className="md:w-1/2 md:pl-20 py-10 md:py-0 text-center md:text-left">
             <h1 className="text-4xl font-bold">About</h1>
-            <p className="text-2xl  mt-5">
+            <div className="text-2xl  mt-5">
               Hello, and welcome! I&apos;m John Edmerson Pizarra, also known as{" "}
               <span className="font-bold text-blue-500">
                 Edmer - a Full Stack Developer
@@ -29,7 +31,16 @@ function About() {
               Hailing from Limay, Central Luzon in the Philippines, I transform
               abstract concepts into digital realities, one line of code at a
               time.
-            </p>
+            </div>
+            <div className="flex mt-2">
+              <Link
+                href="https://docs.google.com/document/d/1GLOYTv8wWdJmPZv5XjjUmUR-i0h0UN6tbyMYuT0TiDk/edit?usp=sharing"
+                target="_blank"
+                className="`uppercase flex gap-2 px-5 py-2.5 text-white hover:text-black items-center rounded-2xl transition-all duration-150 shadow font-bold bg-black hover:bg-white"
+              >
+                View Resume
+              </Link>
+            </div>
           </div>
         </div>
 
