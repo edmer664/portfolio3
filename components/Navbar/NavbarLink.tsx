@@ -5,6 +5,7 @@ interface Props {
   name: string;
   href: string;
   isActive: boolean;
+  onClick?: () => void;
 }
 
 export default function NavbarLink(props: Props) {
@@ -12,6 +13,7 @@ export default function NavbarLink(props: Props) {
     <Link
       className="hover:-rotate-12 transition-all duration-500"
       href={props.href}
+      onClick={props.onClick}
     >
       <span
         className={`font-bold hover:text-black transition-all duration-150 ${

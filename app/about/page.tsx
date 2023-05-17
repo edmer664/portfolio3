@@ -32,7 +32,7 @@ function About() {
               abstract concepts into digital realities, one line of code at a
               time.
             </div>
-            <div className="flex mt-2">
+            <div className="flex mt-2 justify-center md:justify-start">
               <Link
                 href="https://docs.google.com/document/d/1GLOYTv8wWdJmPZv5XjjUmUR-i0h0UN6tbyMYuT0TiDk/edit?usp=sharing"
                 target="_blank"
