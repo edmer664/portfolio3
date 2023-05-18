@@ -12,7 +12,7 @@ function Footer() {
       <div className="bg-black">
         <div className="container mx-auto px-5">
           {/* Call to Action */}
-          <div className="flex items-center justify-center min-h-screen">
+          <div className="flex items-center justify-center min-h-screen lg:min-h-[1080px]">
             <div className="w-full md:w-11/12 text-center">
               <h2 className="text-4xl font-bold text-white">
                 Let&apos;s Create Something Amazing Together

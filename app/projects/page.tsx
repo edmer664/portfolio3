@@ -9,7 +9,7 @@ export default function Projects() {
     <>
       <div className="container mx-auto px-5">
         <h1 className="text-4xl font-bold">Projects</h1>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 min-h-screen py-20">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 min-h-screen lg:min-h-[1080px] py-20">
           {projects.map((project) => (
             <div className="flex flex-col justify-between" key={Math.random()}>
               <div className="flex justify-center">
