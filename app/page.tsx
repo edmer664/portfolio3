@@ -98,7 +98,7 @@ export default function Home() {
       <SparkGenerator />
       <div className="container mx-auto px-5">
         {/* HERO */}
-        <div className="flex flex-col text-center md:text-left md:flex-row min-h-screen lg:min-h-[1080px] items-center">
+        <div className="flex flex-col text-center md:text-left md:flex-row min-h-screen xl:min-h-[1080px] items-center">
           {/* LEFT SIDE */}
           <div className="md:w-1/2 flex flex-col gap-5">
             <h1 className="text-4xl md:text-5xl font-bold">
@@ -128,7 +128,7 @@ export default function Home() {
           </div>
         </div>
         {/* FEATURED */}
-        <div className="min-h-screen lg:min-h-[1080px] py-10">
+        <div className="min-h-screen xl:min-h-[1080px] py-10">
           <h2 className="text-4xl font-bold">Featured Projects</h2>
           <div className="w-full py-10">
             <div className="flex flex-col lg:flex-row gap-5">
@@ -171,7 +171,7 @@ export default function Home() {
           </div>
         </div>
         {/* SERVICES */}
-        <div className="min-h-screen lg:min-h-[1080px] py-10">
+        <div className="min-h-screen xl:min-h-[1080px] py-10">
           <h2 className="text-4xl font-bold">Services</h2>
           <p className="py-5">
             I, Edmer, take pride in being an individual who delivers outstanding

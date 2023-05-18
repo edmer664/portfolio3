@@ -10,7 +10,7 @@ function About() {
     <>
       <SparkGenerator />
       <div className="container mx-auto px-5">
-        <div className="flex flex-wrap items-center justify-center md:justify-between min-h-screen lg:min-h-[1080px]">
+        <div className="flex flex-wrap items-center justify-center md:justify-between min-h-screen xl:min-h-[1080px]">
           <div className="md:w-1/2">
             <Image
               src="/assets/img/hero_about.png"
@@ -44,7 +44,7 @@ function About() {
           </div>
         </div>
 
-        <div className="flex justify-center items-center min-h-screen lg:min-h-[1080px] py-20">
+        <div className="flex justify-center items-center min-h-screen xl:min-h-[1080px] py-20">
           <div
             className="flex flex-col justify-center items-center h-[600px] w-full py-28 rounded-3xl bg-center bg-cover bg-no-repeat"
             style={{
@@ -65,7 +65,7 @@ function About() {
           </div>
         </div>
 
-        <div className="flex flex-wrap-reverse items-center justify-center md:justify-between min-h-screen lg:min-h-[1080px] py-20">
+        <div className="flex flex-wrap-reverse items-center justify-center md:justify-between min-h-screen xl:min-h-[1080px] py-20">
           <div className="md:w-1/2 md:pr-20 py-10 md:py-0 text-center md:text-left">
             <h1 className="text-4xl font-bold">Experience</h1>
             <p className="text-2xl  mt-5">
@@ -88,7 +88,7 @@ function About() {
           </div>
         </div>
 
-        <div className="flex flex-wrap items-center justify-center md:justify-between min-h-screen lg:min-h-[1080px] py-20">
+        <div className="flex flex-wrap items-center justify-center md:justify-between min-h-screen xl:min-h-[1080px] py-20">
           <div className="md:w-1/2">
             <Image
               src="/assets/img/edu_about.png"

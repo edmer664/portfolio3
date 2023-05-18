@@ -109,7 +109,7 @@ function Contact() {
     <>
       <SparkGenerator />
       <div className="container mx-auto px-5">
-        <div className="flex flex-wrap justify-center md:justify-between min-h-screen lg:min-h-[1080px] py-20">
+        <div className="flex flex-wrap justify-center md:justify-between min-h-screen xl:min-h-[1080px] py-20">
           <div className="md:w-1/2">
             <h1 className="text-4xl font-bold">Contact</h1>
             <p className="text-2xl pr-5 mt-5">
