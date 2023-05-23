@@ -11,7 +11,7 @@ interface Props {
 export default function NavbarLink(props: Props) {
   return (
     <Link
-      className="hover:-rotate-12 transition-all duration-500"
+      className="hover:-rotate-3 transition-all duration-500"
       href={props.href}
       onClick={props.onClick}
     >

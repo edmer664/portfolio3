@@ -119,11 +119,11 @@ export default function Home() {
           {/* RIGHT SIDE */}
           <div className="w-full md:w-1/2 flex justify-center md:justify-end">
             <Image
-              className="transition-all duration-300 cursor-pointer mx-auto"
+              className="transition-all duration-300 cursor-pointer mr-0"
               src="/assets/img/hero_img.png"
               alt="Hero Image"
-              width={210}
-              height={340}
+              width={250}
+              height={350}
             />
           </div>
         </div>
@@ -132,7 +132,7 @@ export default function Home() {
           <h2 className="text-4xl font-bold">Featured Projects</h2>
           <div className="w-full py-10">
             <div className="flex flex-col lg:flex-row gap-5">
-              <div className="w-full lg:w-1/2">
+              <div className="w-full lg:w-1/2 overflow-hidden rounded-3xl">
                 <Image
                   src={projects[0].image}
                   alt={projects[0].name}
@@ -141,22 +141,26 @@ export default function Home() {
                   onClick={() => {
                     window.open(projects[0].url, "_blank");
                   }}
-                  className="rounded-3xl mx-auto md:mx-0 hover:-rotate-1 transition-all duration-300 cursor-pointer md:w-full"
+                  className="rounded-3xl mx-auto md:mx-0 hover:scale-105 transition-all duration-300 cursor-pointer md:w-full"
                 />
               </div>
               <div className="w-full lg:w-1/2 flex flex-wrap gap-5 items-center lg:justify-start justify-center md:justify-evenly">
                 {projects.slice(1, 4).map((project) => (
-                  <Image
-                    className="rounded-3xl hover:-rotate-3 transition-all duration-300 cursor-pointer"
-                    src={project.image}
-                    alt={project.name}
-                    width={270}
-                    height={270}
+                  <div
                     key={project.name}
-                    onClick={() => {
-                      window.open(project.url, "_blank");
-                    }}
-                  />
+                    className="overflow-hidden rounded-3xl cursor-pointer"
+                  >
+                    <Image
+                      className="hover:scale-105 transition-all duration-300"
+                      src={project.image}
+                      alt={project.name}
+                      width={270}
+                      height={270}
+                      onClick={() => {
+                        window.open(project.url, "_blank");
+                      }}
+                    />
+                  </div>
                 ))}
                 <div className="flex items-center justify-center w-64">
                   <div className="mx-auto">
@@ -182,7 +186,7 @@ export default function Home() {
           </p>
           <div className="w-full py-10">
             <div className="flex flex-col md:flex-row justify-center gap-10">
-              <div className="w-full md:w-1/2 p-10 rounded-3xl bg-white h-full">
+              <div className="w-full md:w-1/2 p-10 rounded-3xl bg-white h-full shadow-xl">
                 {/* Card 1 */}
                 <div className="flex flex-col gap-5 justify-between lg:flex-row">
                   <Image
@@ -205,7 +209,7 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-              <div className="w-full md:w-1/2 p-10 rounded-3xl bg-white h-full">
+              <div className="w-full md:w-1/2 p-10 rounded-3xl bg-white h-full shadow-xl">
                 {/* Card 2 */}
                 <div className="flex flex-col gap-5 justify-between lg:flex-row">
                   <Image

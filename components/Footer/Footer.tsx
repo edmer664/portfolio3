@@ -26,7 +26,11 @@ function Footer() {
                 development needs.
               </p>
               <div className="flex items-center justify-center">
-                <Button className="mt-5" inverted href="/contact">
+                <Button
+                  className="mt-5"
+                  inverted
+                  oldHref="mailto:edmerpizarra@gmail.com"
+                >
                   <MdMailOutline className="mr-2" size={20} /> Contact Me
                 </Button>
               </div>
@@ -99,7 +103,7 @@ function Footer() {
                   <MdMailOutline size={30} />
                 </a>
                 <a
-                  href="https://www.facebook.com/EdmerKun/"
+                  href="https://www.facebook.com/edmer.code/"
                   target="_blank"
                   rel="noreferrer"
                   className="text-white hover:text-gray-400 transition-all duration-300"
